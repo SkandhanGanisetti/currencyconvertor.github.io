@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #fff;
+}
+
+.container {
+  background: #1e1e2f;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+  max-width: 400px;
+  width: 90%;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #00ffe5;
+}
+
+.converter input,
+.converter select {
+  width: 100%;
+  padding: 12px 16px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 12px;
+  background: #2a2a3d;
+  color: #fff;
+  font-size: 16px;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
+  transition: 0.3s;
+}
+
+.converter select:focus,
+.converter input:focus {
+  outline: none;
+  box-shadow: 0 0 10px #00ffe5;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  background: #00ffe5;
+  color: #000;
+  border: none;
+  border-radius: 12px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #00bfa6;
+}
+
+#result {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffffa5;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
